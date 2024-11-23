@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <?php
 session_start();
 try {
 
     $bdd = new PDO('mysql:host=localhost;dbname=iset;charset=utf8', 'root', '');
+
 
 
     if (isset($_GET['ajoute'])) {
@@ -26,7 +26,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 ?>
-?>
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
